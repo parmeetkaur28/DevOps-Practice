@@ -1,0 +1,75 @@
+
+
+git --version
+mkdir name
+cd name
+ls
+git init
+touch saturn{1..10}.py
+git status
+git add .
+git status 
+git config --global user.name"28"
+git config --global user.email"gmail"
+git commit -m "new files committed"
+git commit -m "new files committed"
+
+git status
+
+/////////////////////////////////////////////////////////////////////////
+
+from selenium import webdriver
+import time
+from selenium.webdriver.common.keys import Keys
+print("sample test case started")
+driver = webdriver.Chrome()
+#driver=webdriver.firefox()
+#driver=webdriver.ie()
+#maximize the window size
+driver.maximize_window()
+#navigate to the url
+driver.get("https://www.google.com/")
+#identify the Google search text box and enter the value
+driver.find_element("name", "q").send_keys("javatpoint")
+time.sleep(3)
+#click on the Google search button
+driver.find_element("name", "btnK").send_keys(Keys.ENTER)
+time.sleep(3)
+#close the browser
+driver.close()
+print("sample test case successfully completed")
+
+python Sample1.py
+
+
+/////////////////////////////////////////////////////////////////////////
+
+docker --version
+docker login
+docker images
+docker images
+docker run ubuntu
+docker run -it -d ubuntu
+docker images
+docker tag ubuntu parmeetkaur/ubuntu
+docker push parmeetkaur/ubuntu
+docker images
+
+/////////////////////////////////////////////////////////////////////////
+
+PHP exp
+
+<html>
+<?phpecho"Hello world from php container ">
+</html>
+
+FROM php
+COPY ./ ./
+EXPOSE 3000
+CMD ["php","-S","0.0.0.0:3000"]
+
+docker build . -t dockerhubaccountname/foldername 
+
+docker run --name=php -p=3000:3000 dockerhubaccountname/foldername
+
+/////////////////////////////////////////////////////////////////////////
